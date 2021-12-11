@@ -1,0 +1,99 @@
+﻿@model SacramentPlanner.Models.SacramentPlan
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SacramentPlan</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.date)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.date)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.conductingLeader)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.conductingLeader)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.openingSong)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.openingSong)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.sacramentHymn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.sacramentHymn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.closingSong)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.closingSong)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.specialMusicalNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.specialMusicalNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.specialMusicalNumberName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.specialMusicalNumberName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.firstSpeaker)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.firstSpeaker)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.firstSpeakerSubject)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.firstSpeakerSubject)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.secondSpeaker)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.secondSpeaker)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.secondSpeakerSubject)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.secondSpeakerSubject)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.thirdSpeaker)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.thirdSpeaker)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.thirdSpeakerSubject)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.thirdSpeakerSubject)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
