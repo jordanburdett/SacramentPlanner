@@ -30,7 +30,7 @@ namespace SacramentPlanner.Models
         [Required]
         public string sacramentHymn { get; set; }
 
-        [Display(Name = "Closing Song")]
+        [Display(Name = "Closing Hymn")]
         [StringLength(30)]
         [Required]
         public string closingSong { get; set; }
