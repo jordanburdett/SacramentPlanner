@@ -7,90 +7,128 @@
 <h1>Details</h1>
 
 <div>
-    <h4>SacramentPlan</h4>
+    <h4>Sacrament Plan for  @Html.DisplayFor(model => model.date)</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.date)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.date)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.conductingLeader)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.conductingLeader)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.openingSong)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.openingSong)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.sacramentHymn)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.sacramentHymn)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.closingSong)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.closingSong)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.specialMusicalNumber)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.specialMusicalNumber)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.specialMusicalNumberName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.specialMusicalNumberName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.firstSpeaker)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.firstSpeaker)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.firstSpeakerSubject)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.firstSpeakerSubject)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.secondSpeaker)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.secondSpeaker)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.secondSpeakerSubject)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.secondSpeakerSubject)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.thirdSpeaker)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.thirdSpeaker)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.thirdSpeakerSubject)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.thirdSpeakerSubject)
-        </dd>
-    </dl>
+    <div class="details-card-container">
+        <div class="details-card">
+            <h4 class="details-card-heading">Welcome to Sacrament Meeting</h4>
+            <h6 class="details-card-heading">@Html.DisplayFor(model => model.date)</h6>
+
+            <div class="details-card-row">
+                <div class="item-left">
+                @Html.DisplayNameFor(model => model.conductingLeader)
+                </div>
+                <div class="item-right">
+                @Html.DisplayFor(model => model.conductingLeader)
+                </div>
+            </div>
+
+            <div class="details-card-row">
+                <div class="item-left">
+                @Html.DisplayNameFor(model => model.openingSong)
+                </div>
+                <div class="item-right">
+                @Html.DisplayFor(model => model.openingSong)
+                </div>
+            </div>
+
+            <div class="details-card-row">
+                <div class="item-left">
+                    @Html.DisplayNameFor(model => model.firstSpeaker)
+                </div>
+                <div class="item-right">
+                     @Html.DisplayFor(model => model.firstSpeaker)
+                </div>
+            </div>
+
+            
+            <div class="details-card-row">
+                <div class="item-left">
+                    Subject
+                </div>
+                <div class="item-right">
+                    @Html.DisplayFor(model => model.firstSpeakerSubject)
+                </div>
+            </div>
+
+            <div class="details-card-row">
+                <div class="item-left">
+                    @Html.DisplayNameFor(model => model.sacramentHymn)
+                </div>
+                <div class="item-right">
+                     @Html.DisplayFor(model => model.sacramentHymn)
+                </div>
+            </div>
+
+            <div class="details-card-row">
+                <div class="item-left">
+                    Musical Number
+                </div>
+                <div class="item-right">
+                    @Html.DisplayFor(model => model.specialMusicalNumberName)
+                </div>
+            </div>
+
+            <div class="details-card-row">
+                <div class="item-left">
+                    Song
+                </div>
+                <div class="item-right">
+                    @Html.DisplayFor(model => model.specialMusicalNumber)
+                </div>
+            </div>
+
+
+
+            <div class="details-card-row">
+                <div class="item-left">
+                    @Html.DisplayNameFor(model => model.secondSpeaker)
+                </div>
+                <div class="item-right">
+                    @Html.DisplayFor(model => model.secondSpeaker)
+                </div>
+            </div>
+
+            <div class="details-card-row">
+                <div class="item-left">
+                    Subject
+                </div>
+                <div class="item-right">
+                    @Html.DisplayFor(model => model.secondSpeakerSubject)
+                </div>
+            </div>
+
+            <div class="details-card-row">
+                <div class="item-left">
+                    @Html.DisplayNameFor(model => model.thirdSpeaker)
+                </div>
+                <div class="item-right">
+                    @Html.DisplayFor(model => model.thirdSpeaker)
+                </div>
+            </div>
+
+            <div class="details-card-row">
+                <div class="item-left">
+                    Subject
+                </div>
+                <div class="item-right">
+                     @Html.DisplayFor(model => model.thirdSpeakerSubject)
+                </div>
+            </div>
+
+            <div class="details-card-row">
+                <div class="item-left">
+                    @Html.DisplayNameFor(model => model.closingSong)
+                </div>
+                <div class="item-right">
+                    @Html.DisplayFor(model => model.closingSong)
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div class="buttonsBottom">
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a> 
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
 </div>
