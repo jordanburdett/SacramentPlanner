@@ -20,6 +20,11 @@ namespace SacramentPlanner.Models
         [Required]
         public string conductingLeader { get; set; }
 
+        [Display(Name = "Opening Prayer")]
+        [StringLength(30)]
+        [Required]
+        public string openingPrayer { get; set; }
+
         [Display(Name = "Opening Hymn")]
         [StringLength(30)]
         [Required]
@@ -34,6 +39,11 @@ namespace SacramentPlanner.Models
         [StringLength(30)]
         [Required]
         public string closingSong { get; set; }
+
+        [Display(Name = "Closing Prayer")]
+        [StringLength(30)]
+        [Required]
+        public string closingPrayer { get; set; }
 
         [Display(Name = "Special Musical Number")]
         [StringLength(30)]
