@@ -34,6 +34,15 @@
 
             <div class="details-card-row">
                 <div class="item-left">
+                @Html.DisplayNameFor(model => model.openingPrayer)
+                </div>
+                <div class="item-right">
+                @Html.DisplayFor(model => model.openingPrayer)
+                </div>
+            </div>
+
+            <div class="details-card-row">
+                <div class="item-left">
                     @Html.DisplayNameFor(model => model.firstSpeaker)
                 </div>
                 <div class="item-right">
@@ -122,6 +131,15 @@
                 </div>
                 <div class="item-right">
                     @Html.DisplayFor(model => model.closingSong)
+                </div>
+            </div>
+
+            <div class="details-card-row">
+                <div class="item-left">
+                @Html.DisplayNameFor(model => model.closingPrayer)
+                </div>
+                <div class="item-right">
+                @Html.DisplayFor(model => model.closingPrayer)
                 </div>
             </div>
         </div>
